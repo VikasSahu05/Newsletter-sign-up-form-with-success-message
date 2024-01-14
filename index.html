@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <div id="content1" class="card">
+            <div class="column column-1">
+                <h1>Stay updated!</h1>
+                <div class="paraSection">
+                <p class="para">Join 60,000+ product managers receiving monthly updates on:</p>
+                <div class="featurs">
+                    <div>
+                        <img src="./assets/images/icon-list.svg" alt="list">
+                        <p>Product discovery and building what matters</p>
+                    </div>
+                    <div>
+                        <img src="./assets/images/icon-list.svg" alt="list">
+                        <p>Measuring to ensure updates are a success</p>
+                    </div>
+                    <div>
+                        <img src="./assets/images/icon-list.svg" alt="list">
+                        <p>And much more!</p>
+                    </div>
+                </div>
+               <div class="form-container">
+                <div class="labelText">
+                    <label for="email">Email address</label>
+                    <label id="hidden" for="">Valid email required</label>
+                </div>
+                <div class="form">
+                    <form id="myForm">
+                    <div>
+                        <input type="text" id="email" name="email" autocomplete="off" placeholder="email@company.com">
+                    </div>
+                         <button type="submit">Subscribe to monthly newsletter</button>
+                    </form>
+                </div>
+               </div>
+                </div>
+            </div>
+            <div class="column column-2">
+                <picture>
+                    <!-- Desktop Image -->
+                    <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width: 768px)">
+                    
+                    <!-- Mobile Image -->
+                    <img src="./assets/images/illustration-sign-up-mobile.svg" alt="Mobile Image" class="img-fluid">
+                  </picture>
+            </div>
+        </div>
+        <div id="content2">
+           <div class="card2">
+                <img src="./assets/images/icon-list.svg" width="50px" height="50px" alt="">
+                <h1> Thanks for subscribing!</h1>
+                <p>A confirmation email has been sent to <b><span id="display"></span></b> 
+                Please open it and click the button inside to confirm your subscription.</p>
+                <button type="button" onclick="dismissMessage()">Dismiss message</button>
+           </div>
+        </div>
+    </main>
+    <footer>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://github.com/VikasSahu05">Vikas kumar sahu</a>.
+          </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
